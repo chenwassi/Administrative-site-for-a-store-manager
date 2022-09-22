@@ -1,0 +1,24 @@
+
+body{
+    background-image: url('https://transformakers.com/wp-content/uploads/2019/04/software-manage-it-services.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    }
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+.menu-container{
+    height: 500px;
+    border-radius: 10px;
+}
+.prodacts{
+    width:250px;
+    height: 150px;
+  }
+
+  .prodacts:hover{
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer
+  }
