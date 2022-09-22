@@ -7,8 +7,7 @@ import AddToParchases from '../Purchases/AddToParchases'
 export default function Purchases() {
     const appStore = useSelector(state =>state)
     const [coustemerData , setcoustemerData] = useState({name:'',prodact:''})
-    const navite = useNavigate()
-    const {name} = useParams()
+
     const saveCoustemerData =(e)=>{
     setcoustemerData({...coustemerData , [e.target.name]:e.target.value})
     }
@@ -20,12 +19,7 @@ export default function Purchases() {
 
   return (
     <>
-    <div>
-      <h2>enter Customers detitls</h2>
-      <input onChange={saveCoustemerData} type={"text"} placeholder='enter name'name='name'></input><br/>
-      <input onChange={saveCoustemerData}type={"text"} placeholder='enter prodact' name = 'prodact'></input><br/>
-      <Link to={"/Prodactname"} spy={true} smooth={true} offset={50} duration={500}> <button onClick={()=>saveDataInaddComponent()}>click</button></Link>
-      </div>
+  
       <h1 className='mt-2'>Products</h1>
     <table className="table table-bordered table-dark w-75 m-auto mt-5">
   <thead>
